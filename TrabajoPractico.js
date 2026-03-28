@@ -26,3 +26,11 @@ console.log(productosCaros);
 
 const gorra = productos.find(producto => producto.nombre === "Gorra");
 console.log(gorra);
+const hayMayorA10000 = productos.some(producto => producto.precio > 10000);
+console.log(hayMayorA10000);
+
+const todosMasDe1000 = productos.every(producto => producto.precio > 1000);
+console.log(todosMasDe1000);
+
+const incluyeCampera = nombresProductos.includes("Campera");
+console.log(incluyeCampera);
