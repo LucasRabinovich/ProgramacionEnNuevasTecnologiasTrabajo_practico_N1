@@ -34,3 +34,18 @@ console.log(todosMasDe1000);
 
 const incluyeCampera = nombresProductos.includes("Campera");
 console.log(incluyeCampera);
+const productosOrdenados = [...productos].sort((a, b) => a.precio - b.precio);
+console.log(productosOrdenados);
+
+const mensajes = productos.map(producto => 
+    `El producto ${producto.nombre} cuesta $${producto.precio} y pertenece a la categoría ${producto.categoria}.`
+);
+console.log(mensajes);
+
+const nuevosProductos = [
+    { id: 6, nombre: "Medias", precio: 5000, categoria: "Ropa" },
+    { id: 7, nombre: "Reloj", precio: 45000, categoria: "Accesorios" }
+];
+
+const todosLosProductos = [...productos, ...nuevosProductos];
+console.log(todosLosProductos);
